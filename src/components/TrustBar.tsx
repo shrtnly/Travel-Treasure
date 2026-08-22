@@ -4,7 +4,7 @@ import { COMPANY_INFO } from "@/data/companyData";
 
 export const TrustBar: React.FC = () => {
   const trustItems = [
-    { icon: Calendar, title: `Established ${COMPANY_INFO.established}`, subtitle: "10+ Years Excellence" },
+    { icon: CheckCircle, title: "Trusted Agency", subtitle: "Certified Operations" },
     { icon: Users, title: COMPANY_INFO.teamStrength, subtitle: "Travel Experts" },
     { icon: ShieldCheck, title: "IATA Certified", subtitle: "Global Travel Accredited" },
     { icon: Award, title: "ATAB & TOAB Member", subtitle: "Registered Agency" },

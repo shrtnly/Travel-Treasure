@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               />
             </div>
             <p className="text-slate-400 text-xs leading-relaxed">
-              Established in {COMPANY_INFO.established}, Travel Treasure is a premier corporate travel management company delivering seamless air ticketing, visa processing, accommodation, airport transfer, and VIP travel solutions.
+              Travel Treasure is a premier corporate travel management company delivering seamless air ticketing, visa processing, accommodation, airport transfer, and VIP travel solutions.
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs text-amber-400 font-semibold">
               <ShieldCheck className="w-4 h-4 text-brand-gold" />
@@ -120,7 +120,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <div>
-            © 2026 {COMPANY_INFO.name}. All Rights Reserved. Operating since {COMPANY_INFO.established}.
+            © 2026 {COMPANY_INFO.name}. All Rights Reserved.
           </div>
           <div className="flex items-center space-x-6">
             <Link href="/about" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>

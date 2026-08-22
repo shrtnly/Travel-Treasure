@@ -9,8 +9,8 @@ import { COMPANY_INFO } from "@/data/companyData";
 import { ShieldCheck, CheckCircle2, Award, Users, Globe, Send, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "About Us — Corporate Travel Agency Since 2014",
-  description: "Learn about Travel Treasure, established in 2014. Professional corporate travel management agency based in Dhaka, Bangladesh.",
+  title: "About Us — Corporate Travel Agency",
+  description: "Learn about Travel Treasure. Professional corporate travel management agency based in Dhaka, Bangladesh.",
 };
 
 export default function AboutPage() {
@@ -28,7 +28,7 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <span className="inline-block px-3.5 py-1.5 rounded-full bg-amber-500/20 text-brand-gold border border-brand-gold/40 text-xs font-bold uppercase tracking-wider">
-            Established {COMPANY_INFO.established}
+            Corporate Travel & Visa Management
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white">
             Travel Treasure — {COMPANY_INFO.tagline}

@@ -49,7 +49,7 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-3 items-center">
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 text-brand-gold border border-brand-gold/40 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
                 <ShieldCheck className="w-4 h-4 text-brand-gold" />
-                Serving Since {COMPANY_INFO.established}
+                IATA & ATAB Accredited
               </span>
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-slate-200 border border-white/20 text-xs font-semibold backdrop-blur-md">
                 <Award className="w-4 h-4 text-amber-400" />
@@ -114,7 +114,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-block px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full uppercase tracking-wider border border-amber-200">
-                Corporate Excellence Since 2014
+                Corporate Excellence
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy leading-tight">
                 Travel Made Simple. Business Made Easier.

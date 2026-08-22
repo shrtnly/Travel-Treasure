@@ -25,7 +25,7 @@ export const ExecutiveCards: React.FC = () => {
             <p className="text-xs text-slate-600 leading-relaxed pt-1">{exec.bio}</p>
             <div className="pt-3 flex items-center justify-center sm:justify-start gap-2 text-slate-400 text-xs font-medium">
               <Shield className="w-4 h-4 text-emerald-500" />
-              <span>Travel Treasure Leadership • Est. 2014</span>
+              <span>Travel Treasure Leadership</span>
             </div>
           </div>
         </div>

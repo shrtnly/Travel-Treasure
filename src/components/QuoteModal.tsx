@@ -46,7 +46,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, default
             </div>
             <h3 className="text-2xl font-bold text-white">Request a Custom Quote</h3>
             <p className="text-slate-300 text-xs mt-1">
-              Serving corporate accounts, organizations, and business travelers since {COMPANY_INFO.established}
+              Serving corporate accounts, organizations, and business travelers.
             </p>
           </div>
           <button

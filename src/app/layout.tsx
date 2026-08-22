@@ -7,10 +7,10 @@ import { COMPANY_INFO } from "@/data/companyData";
 
 export const metadata: Metadata = {
   title: {
-    default: `${COMPANY_INFO.name} — Corporate Travel Agency Bangladesh | Established ${COMPANY_INFO.established}`,
+    default: `${COMPANY_INFO.name} — Corporate Travel Agency Bangladesh`,
     template: `%s | ${COMPANY_INFO.name} Corporate Travel`
   },
-  description: `${COMPANY_INFO.name} is a leading corporate travel management agency operating since ${COMPANY_INFO.established}. Comprehensive air ticketing, visa processing, hotel reservation, MICE, and VIP airport assistance in Dhaka, Bangladesh.`,
+  description: `${COMPANY_INFO.name} is a leading corporate travel management agency. Comprehensive air ticketing, visa processing, hotel reservation, MICE, and VIP airport assistance in Dhaka, Bangladesh.`,
   keywords: [
     "Travel Treasure",
     "Corporate Travel Agency Bangladesh",
