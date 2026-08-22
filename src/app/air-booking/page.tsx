@@ -22,7 +22,7 @@ export default function AirBookingPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <span className="inline-block px-3.5 py-1.5 rounded-full bg-amber-500/20 text-brand-gold border border-brand-gold/40 text-xs font-bold uppercase tracking-wider">
-            IATA Accredited Ticketing Desk
+            Multi-GDS Air Ticketing Desk
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white">
             Domestic & International Air Booking

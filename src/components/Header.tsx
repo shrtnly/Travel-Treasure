@@ -52,20 +52,20 @@ export const Header: React.FC = () => {
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-100 py-3"
-            : "bg-white border-b border-slate-100 py-4"
+            ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-100 py-2.5 sm:py-3"
+            : "bg-white border-b border-slate-100 py-3 sm:py-4"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative h-12 w-48 transition-transform group-hover:scale-105">
+            <Link href="/" className="flex items-center gap-2 shrink-0 group">
+              <div className="relative h-9 w-36 sm:h-12 sm:w-48 transition-transform group-hover:scale-105">
                 <Image
                   src="/logo.png"
                   alt="Travel Treasure Corporate Travel Agency"
                   fill
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", objectPosition: "left center" }}
                   priority
                 />
               </div>
@@ -177,7 +177,7 @@ export const Header: React.FC = () => {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-[73px] bg-white border-b border-slate-200 shadow-2xl max-h-[85vh] overflow-y-auto z-50">
+          <div className="lg:hidden absolute top-full inset-x-0 bg-white border-b border-slate-200 shadow-2xl max-h-[85vh] overflow-y-auto z-50">
             <div className="p-4 space-y-2">
               {NAVIGATION_LINKS.map((link) => (
                 <div key={link.name}>

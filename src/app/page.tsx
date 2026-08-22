@@ -49,7 +49,7 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-3 items-center">
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 text-brand-gold border border-brand-gold/40 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
                 <ShieldCheck className="w-4 h-4 text-brand-gold" />
-                IATA & ATAB Accredited
+                Corporate Travel & Visa Management
               </span>
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-slate-200 border border-white/20 text-xs font-semibold backdrop-blur-md">
                 <Award className="w-4 h-4 text-amber-400" />
@@ -98,7 +98,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>IATA Accredited</span>
+                <span>18 Global Partner Airlines</span>
               </div>
             </div>
           </div>
