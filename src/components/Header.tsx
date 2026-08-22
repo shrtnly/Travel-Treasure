@@ -31,17 +31,7 @@ export const Header: React.FC = () => {
     <>
       {/* Top Utility Bar */}
       <div className="bg-brand-navy-dark text-slate-300 text-xs py-2 px-4 border-b border-white/10 hidden md:block">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-6">
-            <span className="flex items-center gap-1.5 text-amber-400 font-medium">
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping inline-block"></span>
-              Established 2014 • Corporate Travel Management
-            </span>
-            <span className="text-slate-400">|</span>
-            <span className="flex items-center gap-1.5">
-              <span>Dhaka, Bangladesh</span>
-            </span>
-          </div>
+        <div className="max-w-7xl mx-auto flex justify-end items-center">
           <div className="flex items-center space-x-6">
             <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-white transition-colors flex items-center gap-1.5">
               <Phone className="w-3.5 h-3.5 text-amber-400" />
