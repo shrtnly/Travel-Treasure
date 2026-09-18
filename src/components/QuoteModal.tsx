@@ -28,6 +28,22 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, default
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const message = `*New Quote Request - Travel Treasure*
+
+*Name:* ${formData.fullName}
+*Company:* ${formData.companyName || 'N/A'}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone}
+*Service:* ${formData.serviceRequired}
+*Destination:* ${formData.travelDestination || 'N/A'}
+*Travel Date:* ${formData.travelDate || 'N/A'}
+*Travelers:* ${formData.numberOfTravelers}
+*Requirements:* ${formData.message || 'N/A'}`;
+
+    const whatsappUrl = `https://wa.me/8801815311232?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);

@@ -7,7 +7,6 @@ export const TrustBar: React.FC = () => {
     { icon: CheckCircle, title: "Trusted Agency", subtitle: "Certified Operations" },
     { icon: Users, title: COMPANY_INFO.teamStrength, subtitle: "Travel Experts" },
     { icon: ShieldCheck, title: "IATA Certified", subtitle: "Global Travel Accredited" },
-    { icon: Award, title: "ATAB & TOAB Member", subtitle: "Registered Agency" },
     { icon: Briefcase, title: "Corporate Travel", subtitle: "Specialists & Dedicated Support" },
   ];
 

@@ -56,14 +56,14 @@ export default function AboutPage() {
                 At Travel Treasure, we make travel simple, comfortable, and personal. Since our journey began, we’ve helped individuals, families, and businesses travel with confidence through trusted service and expert guidance.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Backed by a dedicated team of 15–20 travel professionals, multi-GDS connectivity, and partnerships with 18 leading airlines, we deliver competitive fares, flexible options, and reliable travel solutions.
+                Backed by a dedicated team of 15–20 travel professionals, multi-GDS connectivity, and partnerships with 20 leading airlines, we deliver competitive fares, flexible options, and reliable travel solutions.
               </p>
 
               <div className="space-y-3 pt-2">
                 {[
                   "Dedicated team of 15–20 travel professionals",
                   "Multi-GDS connectivity (Sabre, Amadeus, Travelport)",
-                  "Partnerships with 18 leading airlines worldwide",
+                  "Partnerships with 20 leading airlines worldwide",
                   "Competitive fares & flexible ticketing options",
                   "End-to-end visa processing & embassy liaison",
                   "24/7 fast response support via WhatsApp"

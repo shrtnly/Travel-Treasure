@@ -14,12 +14,15 @@ import { QuoteModal } from "@/components/QuoteModal";
 import { COMPANY_INFO, CORE_SERVICES } from "@/data/companyData";
 import { 
   Send, ArrowRight, ShieldCheck, Clock, Zap, CheckCircle2, 
-  MessageCircle, Phone, Award, Globe, Users, Building2, Crown, Sparkles 
+  MessageCircle, Phone, Award, Globe, Users, Building2, Crown, Sparkles,
+  ChevronDown, ChevronUp
 } from "lucide-react";
 
 export default function HomePage() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [selectedServiceForQuote, setSelectedServiceForQuote] = useState("Corporate Travel Management");
+  const [showAllServices, setShowAllServices] = useState(false);
+  const displayedServices = showAllServices ? CORE_SERVICES : CORE_SERVICES.slice(0, 3);
 
   const openQuote = (serviceName?: string) => {
     if (serviceName) setSelectedServiceForQuote(serviceName);
@@ -36,7 +39,7 @@ export default function HomePage() {
             src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop"
             alt="International Executive Airport Terminal Corporate Travel"
             fill
-            className="object-cover object-center opacity-30 mix-blend-luminosity"
+            className="object-cover object-center opacity-50 mix-blend-luminosity"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-brand-navy-dark/95 to-slate-900/80"></div>
@@ -47,14 +50,6 @@ export default function HomePage() {
           <div className="max-w-3xl space-y-8">
             {/* Trust Badges above Headline */}
             <div className="flex flex-wrap gap-3 items-center">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 text-brand-gold border border-brand-gold/40 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
-                <ShieldCheck className="w-4 h-4 text-brand-gold" />
-                Corporate Travel & Visa Management
-              </span>
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-slate-200 border border-white/20 text-xs font-semibold backdrop-blur-md">
-                <Award className="w-4 h-4 text-amber-400" />
-                Experienced Travel Professionals
-              </span>
             </div>
 
             {/* Headline */}
@@ -98,7 +93,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>18 Global Partner Airlines</span>
+                <span>20 Global Partner Airlines</span>
               </div>
             </div>
           </div>
@@ -120,7 +115,7 @@ export default function HomePage() {
                 Travel Made Simple. Business Made Easier.
               </h2>
               <p className="text-slate-600 text-base leading-relaxed">
-                At Travel Treasure, we make travel simple, comfortable, and personal. Since our journey began, we’ve helped individuals, families, and businesses travel with confidence through trusted service and expert guidance. Backed by a dedicated team of 15–20 travel professionals, multi-GDS connectivity, and 18 partner airlines, we deliver competitive fares, flexible options, and reliable travel solutions.
+                At Travel Treasure, we make travel simple, comfortable, and personal. Since our journey began, we’ve helped individuals, families, and businesses travel with confidence through trusted service and expert guidance. Backed by a dedicated team of 15–20 travel professionals, multi-GDS connectivity, and 20 partner airlines, we deliver competitive fares, flexible options, and reliable travel solutions.
               </p>
               <div className="pt-2">
                 <Link
@@ -175,7 +170,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {CORE_SERVICES.map((service, index) => (
+            {displayedServices.map((service, index) => (
               <ServiceCard
                 key={service.id}
                 id={service.id}
@@ -188,6 +183,27 @@ export default function HomePage() {
               />
             ))}
           </div>
+
+          {CORE_SERVICES.length > 3 && (
+            <div className="text-center mt-12">
+              <button
+                onClick={() => setShowAllServices(!showAllServices)}
+                className="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold text-sm px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-brand-gold/30"
+              >
+                {showAllServices ? (
+                  <>
+                    <ChevronUp className="w-4 h-4" />
+                    <span>View Less</span>
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown className="w-4 h-4" />
+                    <span>Show All Services</span>
+                  </>
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </section>
 

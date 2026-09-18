@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs text-amber-400 font-semibold">
               <ShieldCheck className="w-4 h-4 text-brand-gold" />
-              <span>IATA • ATAB • TOAB Accredited</span>
+              <span>IATA</span>
             </div>
           </div>
 

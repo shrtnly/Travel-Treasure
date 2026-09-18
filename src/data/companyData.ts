@@ -6,7 +6,7 @@ export const COMPANY_INFO = {
   teamStrength: "15–20 travel professionals",
   businessType: "Corporate Travel & Visa Management",
   address: "House 2, Road-4, Block-A, Section-11, Mohammad Ali Tower, 4th Floor, Dhaka-1216, Bangladesh",
-  email: "Traveltreasure121@gmail.com",
+  email: "contact@traveltreasurebd.com",
   phone: "+88 01714 400844",
   phoneRaw: "+8801714400844",
   whatsapp: "+88 01714 400844",
@@ -17,9 +17,6 @@ export const COMPANY_INFO = {
   vision: "To become Bangladesh's most trusted and preferred travel partner — recognized by corporations, airlines, and individual travelers alike for our integrity, responsiveness, and the human touch we bring to every booking. We envision a future where booking through Travel Treasure is synonymous with peace of mind.",
   certifications: [
     { name: "IATA Accredited", label: "International Air Transport Association", code: "Global Accreditation for Travel Agents" },
-    { name: "ATAB Member", label: "Association of Travel Agents of Bangladesh", code: "National Industry Membership" },
-    { name: "TOAB Member", label: "Tour Operators Association of Bangladesh", code: "Recognized Tour Operator Status" },
-    { name: "Ministry Recognition", label: "Ministry of Civil Aviation & Tourism", code: "Government Accreditation Standards" },
     { name: "E-TIN Registered", label: "Electronic Taxpayer's Identification Number", code: "Issued & Managed by NBR" },
     { name: "Trade Licensed", label: "Trade License in Bangladesh", code: "Official Legal Business Permit" },
   ]
@@ -66,11 +63,11 @@ export const CORE_SERVICES = [
   {
     id: "air-booking",
     title: "Air Booking",
-    shortDesc: "Domestic and international flight ticketing with access to 18 partner airlines and competitive fares.",
-    fullDesc: "Domestic and international flight ticketing with access to 18 partner airlines and competitive fares. We provide optimized flight schedules, corporate rates, seat preferences, and group booking logistics.",
+    shortDesc: "Domestic and international flight ticketing with access to 20 partner airlines and competitive fares.",
+    fullDesc: "Domestic and international flight ticketing with access to 20 partner airlines and competitive fares. We provide optimized flight schedules, corporate rates, seat preferences, and group booking logistics.",
     icon: "Plane",
     href: "/air-booking",
-    features: ["18 Global Partner Airlines", "Domestic & International Routes", "Competitive Fares", "Flexible Booking Options"]
+    features: ["20 Global Partner Airlines", "Domestic & International Routes", "Competitive Fares", "Flexible Booking Options"]
   },
   {
     id: "visa-processing",
@@ -156,31 +153,39 @@ export const CORE_SERVICES = [
 ];
 
 export const AIRLINE_PARTNERS = [
-  { name: "Biman Bangladesh Airlines", code: "BG", country: "Bangladesh", logoText: "BIMAN BANGLADESH AIRLINES" },
+  { name: "Biman Bangladesh", code: "BG", country: "Bangladesh", logoText: "BIMAN BANGLADESH" },
   { name: "Emirates", code: "EK", country: "UAE", logoText: "EMIRATES" },
   { name: "Qatar Airways", code: "QR", country: "Qatar", logoText: "QATAR AIRWAYS" },
   { name: "Singapore Airlines", code: "SQ", country: "Singapore", logoText: "SINGAPORE AIRLINES" },
-  { name: "Cathay Pacific", code: "CX", country: "Hong Kong", logoText: "CATHAY PACIFIC" },
+  { name: "Air Astra", code: "2A", country: "Bangladesh", logoText: "AIR ASTRA" },
   { name: "Turkish Airlines", code: "TK", country: "Turkey", logoText: "TURKISH AIRLINES" },
   { name: "Thai Airways", code: "TG", country: "Thailand", logoText: "THAI AIRWAYS" },
   { name: "Malaysia Airlines", code: "MH", country: "Malaysia", logoText: "MALAYSIA AIRLINES" },
-  { name: "Saudia", code: "SV", country: "Saudi Arabia", logoText: "SAUDIA" },
-  { name: "Kuwait Airways", code: "KU", country: "Kuwait", logoText: "KUWAIT AIRWAYS" },
-  { name: "US-Bangla Airlines", code: "BS", country: "Bangladesh", logoText: "US-BANGLA AIRLINES" },
+  { name: "Saudia Airlines", code: "SV", country: "Saudi Arabia", logoText: "SAUDIA" },
+  { name: "IndiGo", code: "6E", country: "India", logoText: "INDIGO" },
+  { name: "US-Bangla", code: "BS", country: "Bangladesh", logoText: "US-BANGLA AIRLINES" },
   { name: "NOVOAIR", code: "VQ", country: "Bangladesh", logoText: "NOVOAIR" },
-  { name: "United Airlines", code: "UA", country: "United States", logoText: "UNITED AIRLINES" },
-  { name: "Vistara", code: "UK", country: "India", logoText: "VISTARA" },
-  { name: "AirAsia", code: "AK", country: "Malaysia", logoText: "AIRASIA" },
-  { name: "Malindo Air", code: "OD", country: "Malaysia", logoText: "MALINDO AIR (BATIK AIR)" },
-  { name: "China Eastern Airlines", code: "MU", country: "China", logoText: "CHINA EASTERN AIRLINES" },
-  { name: "China Southern Airlines", code: "CZ", country: "China", logoText: "CHINA SOUTHERN AIRLINES" },
+  { name: "Air India", code: "AI", country: "India", logoText: "AIR INDIA" },
+  { name: "SriLanka Airlines", code: "UL", country: "Sri Lanka", logoText: "SRILANKA AIRLINES" },
+  { name: "Batik Air", code: "OD", country: "Malaysia", logoText: "BATIK AIR" },
+  { name: "Oman Air", code: "WY", country: "Oman", logoText: "OMAN AIR" },
+  { name: "flydubai", code: "FZ", country: "UAE", logoText: "FLYDUBAI" },
+  { name: "Himalaya Airlines", code: "H9", country: "Nepal", logoText: "HIMALAYA AIRLINES" },
+  { name: "Air Arabia", code: "G9", country: "UAE", logoText: "AIR ARABIA" },
+  { name: "Jazeera Airways", code: "J9", country: "Kuwait", logoText: "JAZEERA AIRWAYS" },
 ];
 
 export const CLIENT_LIST = [
-  { name: "Bank Asia", industry: "Banking & Financial Services", tag: "Corporate Travel & Visa Services" },
-  { name: "BRAC Bank", industry: "Banking & Financial Services", tag: "Executive Flights & MICE" },
-  { name: "Chinese", industry: "Multinational Enterprise", tag: "Cross-border Travel Solutions" },
-  { name: "Dekko Group", industry: "Garments & Manufacturing", tag: "Corporate Travel Management" },
+  { name: "National Bank", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
+  { name: "Bank ASIA", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
+  { name: "Bangladesh Cricket Board", industry: "Executive Flights & MICE", tag: "Executive Flights & MICE" },
+  { name: "ATN Bangla", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
+  { name: "KFC", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
+  { name: "Matar bari project", industry: "Executive Flights & MICE", tag: "Executive Flights & MICE" },
+  { name: "Gusan Construction", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
+  { name: "Sino Life Global", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
+  { name: "Aus hk dreamease home technology ltd", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
+  { name: "Sonho international", industry: "Corporate Travel Management & Executive Flights", tag: "Corporate Travel & Visa Services" },
 ];
 
 export const EXECUTIVE_TEAM = [
