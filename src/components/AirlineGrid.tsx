@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { AIRLINE_PARTNERS } from "@/data/companyData";
 import { Plane, ChevronDown, ChevronUp } from "lucide-react";

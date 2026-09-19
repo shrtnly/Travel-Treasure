@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { CLIENT_LIST } from "@/data/companyData";
 import { Building, ShieldCheck, ChevronDown, ChevronUp } from "lucide-react";
